@@ -1,0 +1,19 @@
+16-06-2019 20:51:59 INFO     [app.py:13] Loading books list...
+16-06-2019 20:58:40 INFO     [app.py:13] Loading books list...
+16-06-2019 20:58:40 DEBUG    [connectionpool.py:206] Starting new HTTP connection (1): books.toscrape.com:80
+16-06-2019 20:58:40 DEBUG    [connectionpool.py:396] http://books.toscrape.com:80 "GET /catalogue/page-1.html HTTP/1.1" 200 None
+16-06-2019 20:58:40 DEBUG    [books_page.py:16] Parsing page content with BeautifulSoup
+16-06-2019 20:58:40 DEBUG    [books_page.py:24] Getting all books on page
+16-06-2019 20:58:40 DEBUG    [books_page.py:39] Finding all number of catalogue pages available.
+16-06-2019 20:58:40 INFO     [books_page.py:41] Found number of catalogue pages available: `Page 1 of 50` 
+16-06-2019 20:58:40 DEBUG    [connectionpool.py:206] Starting new HTTP connection (1): books.toscrape.com:80
+16-06-2019 20:58:40 DEBUG    [connectionpool.py:396] http://books.toscrape.com:80 "GET /catalogue/page-2.html HTTP/1.1" 200 None
+16-06-2019 20:58:40 DEBUG    [app.py:25] Creating BooksPage from page content
+16-06-2019 20:58:40 DEBUG    [books_page.py:16] Parsing page content with BeautifulSoup
+16-06-2019 20:58:40 DEBUG    [books_page.py:24] Getting all books on page
+16-06-2019 20:58:40 DEBUG    [connectionpool.py:206] Starting new HTTP connection (1): books.toscrape.com:80
+16-06-2019 20:58:41 DEBUG    [connectionpool.py:396] http://books.toscrape.com:80 "GET /catalogue/page-3.html HTTP/1.1" 200 None
+16-06-2019 20:58:41 DEBUG    [app.py:25] Creating BooksPage from page content
+16-06-2019 20:58:41 DEBUG    [books_page.py:16] Parsing page content with BeautifulSoup
+16-06-2019 20:58:41 DEBUG    [books_page.py:24] Getting all books on page
+16-06-2019 20:58:41 DEBUG    [connectionpool.py:206] Starting new HTTP connection (1): books.toscrape.com:80

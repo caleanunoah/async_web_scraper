@@ -17,8 +17,7 @@ def sort_best_books():
     """
     :return: list of top 5 books by rating
     """
-    best_books = sorted(books, key=lambda x: x.rating * -1)#[:5]
-    print("Length of all books equals ", len(best_books))
+    best_books = sorted(books, key=lambda x: x.rating * -1)[:5]
     for book in best_books:
         print(book)
 
@@ -27,7 +26,7 @@ def sort_cheapest_books():
     """
     :return: List of top 5 cheapest books
     """
-    cheap_books = sorted(books, key=lambda x: x.price)#[:5]
+    cheap_books = sorted(books, key=lambda x: x.price)[:5]
     for book in cheap_books:
         print(book)
 
