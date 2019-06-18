@@ -4,7 +4,6 @@ from locators.books_page_locators import BooksPageLocators
 import re
 import logging
 
-
 logger = logging.getLogger("scraping.books_page")
 
 
@@ -41,9 +40,3 @@ class BooksPage:
         logger.info(f"Found number of catalogue pages available: `{content}` ")
         pattern = ' '
         return int(re.split(pattern, content)[3])
-        '''
-        pattern = 'Page [0-9]+ of ([0-9]+)'
-        matcher = re.search(pattern, content)
-        pages = int(matcher.group(1))
-        return pages
-        '''
